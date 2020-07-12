@@ -1,8 +1,20 @@
 package com.company;
-
+import java.util.Scanner;
 public class Main {
 
+
     public static void main(String[] args) {
-	System.out.println("feature1 ");
+        Calculator calc = new Calculator();
+
+        System.out.println("Enter integer 1st number:\n");
+        int a = calc.getInt();
+
+        System.out.println("Enter integer 2nd number:\n");
+        int b = calc.getInt();
+
+        char c = calc.getOperation();
+        System.out.println("Result of action:\n");
+        calc.calculate(a, b, c);
+
     }
 }
